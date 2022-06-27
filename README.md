@@ -50,7 +50,6 @@ Write the following command on the terminal to install the source code of this r
 
 ```
 git clone https://github.com/Viriliter/Saldiray/
-
 ```
 
 ## Base Software
