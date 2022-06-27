@@ -12,7 +12,7 @@ This repo consists last version of codes of Saldiray autonomous ground vehicle (
 #### Hardware:
 Following hardwares were used for this project but alternative ones could be used.
 ```
-Hydrolic driven tracked vehicle that hydrolic valves controled over CAN protocol.
+Hydrolic driven tracked vehicle that hydrolic valves can be controled over CAN protocol.
 Nvidia Jetson TX2 Developer Board
 Velodyne VLP16 Lidar
 Velodyne Interface Box
