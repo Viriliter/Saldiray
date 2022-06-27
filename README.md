@@ -67,6 +67,9 @@ Ali Subay  <br /> Mert Limoncuoğlu <br />
 ## Versioning
 1.0
 
+## Known Issues
+* In base software, there is not adaptive resolution so there could be offsets in the widgets depending on the screen resolution. Best results are at 1368x768 screens.
+
 ## Authors
 Mert Limoncuoğlu
 
