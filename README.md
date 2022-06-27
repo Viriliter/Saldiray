@@ -25,15 +25,12 @@ QinetiQ GNSS receiver
 ```
 #### Software:
 Following dependicies should be installed before running the code.
-```
+
 Base
 ```
 
-```
 
 Rover
-```
-
 ```
 
 ### Installing
