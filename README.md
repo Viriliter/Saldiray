@@ -33,12 +33,17 @@ Following dependicies should be installed before running the code.
 Base Software
 ```
 Microsoft .NET Framework 4.5.2 Developer Pack
+Bing Maps REST Services
+Newtonsoft.Json
+OzekiSDK
+SlimDX
 ```
 
 Rover Software
 ```
 ROS Kinetic Kame
 Python 2.7
+Numpy
 ```
 
 ### Installing
@@ -49,7 +54,6 @@ git clone https://github.com/Viriliter/Saldiray/
 
 ## Goals
 The goal of the project is establish a software system that converts the regular vehicle to autonomous driven vehicle with reqired hardware package.
-## Running the tests
 
 ## Contributing
 Mert Limoncuoğlu <br /> Ali Subay <br />
