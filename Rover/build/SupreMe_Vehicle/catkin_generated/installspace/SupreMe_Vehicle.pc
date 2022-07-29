@@ -1,0 +1,8 @@
+prefix=/home/monster/catkin_ws/install
+
+Name: SupreMe_Vehicle
+Description: Description of SupreMe_Vehicle
+Version: 0.0.0
+Cflags: -I/home/monster/catkin_ws/install/include
+Libs: -L/home/monster/catkin_ws/install/lib 
+Requires: message_runtime

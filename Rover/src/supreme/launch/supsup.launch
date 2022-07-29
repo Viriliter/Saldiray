@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<launch>
+   <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch" launch-prefix="xterm -e" ></include>
+   <include file="$(find loam_velodyne)/launch/loam_velodyne.launch" launch-prefix="xterm -e" ></include>
+   <node name="sweep_sup_node"	pkg="supreme"  type="sweep_sup_node" output="screen" launch-prefix="xterm -e">
+  	<param name="serial_port"         type="string" value="/dev/ttyUSB0"/>
+  	<param name="serial_baudrate"     type="int"    value="115200"/>
+  	<param name="frame_id"            type="string" value="map"/>
+  	<param name="rotation_speed"	  type="int" value="5"/>
+  </node>
+    <!--<node pkg="supreme" type="MotorControl.py" name="Mcontrol" output="screen" launch-prefix="xterm -e"/>-->
+    <node pkg="supreme" type="Path_Planning_Algorthm.py" name="path_planner" output="screen" launch-prefix="xterm -e"/>
+    <node pkg="supreme" type="Key_Point.py" name="KeyPoints" output="screen" launch-prefix="xterm -e"/>
+    <node pkg="supreme" type="RCTank.py" name="RCTanknode" output="screen" launch-prefix="xterm -e"/>
+    <!--<node pkg="supreme" type="joystick.py" name="joysticknode" output="screen" launch-prefix="xterm -e"/>-->
+    <!--<node pkg="supreme" type="imuScript.py" name="imunode" output="screen" launch-prefix="xterm -e" /> -->
+    <node pkg="supreme" type="FornoxControl.py" name="Fornox1" output="screen" launch-prefix="xterm -e"/>
+    <node pkg="supreme" type="canusb.py" name="canusb1" output="screen" launch-prefix="xterm -e"/>
+    <node pkg="supreme" type="Telemetry.py" name="TelemetryTest" output="screen" launch-prefix="xterm -e"/>    
+    <node pkg="supreme" type="Scanner_Algorthm.py" name="Sc_Al" output="screen" launch-prefix="xterm -e"/>
+    <arg name="svo_file"              default="" /> <!-- <arg name="svo_file" default="path/to/svo/file.svo"> -->
+
+    <arg name="camera_model"         default="0" /> <!-- 0=ZED, 1=ZEDM-->
+    <arg name="serial_number"        default="0" />
+    <arg name="verbose"              default="true" />
+    <arg name="resolution"           default="3" /> <!--0=RESOLUTION_HD2K, 1=RESOLUTION_HD1080, 2=RESOLUTION_HD720, 3=RESOLUTION_VGA -->
+    <arg name="frame_rate"           default="15" />
+    <!-- RESOLUTION_HD2K   -> 2208*1242, available framerates: 15 fps.
+         RESOLUTION_HD1080 -> 1920*1080, available framerates: 15, 30 fps.
+         RESOLUTION_HD720  -> 1280*720,  available framerates: 15, 30, 60 fps.
+         RESOLUTION_VGA    -> 672*376,   available framerates: 15, 30, 60, 100 fps. -->
+
+    <!-- Coordinate frame -->
+    <arg name="pose_frame"           default="map" />
+    <arg name="odometry_frame"       default="odom" />
+
+    <group ns="zed">
+        <include file="$(find supreme)/launch/zed_camera.launch">
+            <arg name="svo_file"            value="$(arg svo_file)" />
+            <arg name="pose_frame"          value="$(arg pose_frame)" />
+            <arg name="odometry_frame"      value="$(arg odometry_frame)" />
+            <arg name="camera_model"        value="$(arg camera_model)" />
+            <arg name="serial_number"       value="$(arg serial_number)" />
+            <arg name="resolution"          value="$(arg resolution)" />
+            <arg name="frame_rate"          value="$(arg frame_rate)" />
+            <arg name="verbose"             value="$(arg verbose)" />
+        </include>
+    </group>
+  <!--<node name="rviz" pkg="rviz" type="rviz" args="-d $(find supreme)/rviz/sweep_pc2.rviz" /> -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find supreme)/rviz/zed.rviz" />
+</launch>

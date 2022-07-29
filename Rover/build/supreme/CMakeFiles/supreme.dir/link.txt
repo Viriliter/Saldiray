@@ -1,0 +1,1 @@
+/usr/bin/c++    -fopenmp  -O3 -DNDEBUG     CMakeFiles/supreme.dir/src/node.cpp.o  -o /home/monster/catkin_ws/devel/lib/supreme/supreme  -L/usr/local/zed/lib -rdynamic 

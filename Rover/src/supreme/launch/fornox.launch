@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="supreme" type="FornoxControl.py" name="Fornox1" output="screen" launch-prefix="xterm -e"/>
+    <node pkg="supreme" type="canusb.py" name="canusb1" output="screen" launch-prefix="xterm -e"/>
+    <node pkg="supreme" type="Telemetry.py" name="TelemetryTest" output="screen" launch-prefix="xterm -e"/>
+</launch>

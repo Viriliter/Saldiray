@@ -1,0 +1,8 @@
+prefix=/home/monster/catkin_ws/install
+
+Name: canusb
+Description: Description of canusb
+Version: 0.0.0
+Cflags: -I/home/monster/catkin_ws/install/include
+Libs: -L/home/monster/catkin_ws/install/lib 
+Requires: message_runtime

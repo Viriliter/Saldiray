@@ -1,0 +1,2 @@
+set(supreme_MESSAGE_FILES "/home/monster/catkin_ws/src/supreme/msg/Num.msg;/home/monster/catkin_ws/src/supreme/msg/msgstring.msg")
+set(supreme_SERVICE_FILES "/home/monster/catkin_ws/src/supreme/srv/set_initial_pose.srv;/home/monster/catkin_ws/src/supreme/srv/reset_odometry.srv;/home/monster/catkin_ws/src/supreme/srv/reset_tracking.srv;/home/monster/catkin_ws/src/supreme/srv/AddTwoInts.srv;/home/monster/catkin_ws/src/supreme/srv/TrialService.srv")

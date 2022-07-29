@@ -1,0 +1,4 @@
+string user
+int64 state
+---
+string name

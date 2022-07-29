@@ -1,0 +1,8 @@
+prefix=/home/monster/catkin_ws/devel
+
+Name: dsl_gridsearch
+Description: Description of dsl_gridsearch
+Version: 0.0.1
+Cflags: -I/home/monster/catkin_ws/src/dsl_gridsearch/include
+Libs: -L/home/monster/catkin_ws/devel/lib 
+Requires: roscpp rospy std_msgs
