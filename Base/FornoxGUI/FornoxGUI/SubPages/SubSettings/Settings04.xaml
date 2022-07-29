@@ -1,0 +1,45 @@
+﻿<Page x:Class="FornoxGUI.SubPages.SubSettings.Settings04"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FornoxGUI.SubPages.SubSettings"
+      mc:Ignorable="d" 
+      d:DesignHeight="678" d:DesignWidth="1000"
+      Title="Settings04">
+
+    <Grid Background="WhiteSmoke">
+        <StackPanel Orientation="Horizontal" Margin="5,20,5,5">
+            <Grid>
+                <StackPanel Orientation="Vertical">
+                    <Label Margin="0,10" Height="50" Width="300" VerticalAlignment="Top" Content="Instrument Settings" FontWeight="Bold" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Margin="0,10" Height="50" Width="250" VerticalAlignment="Top" Content="Artificial Horizontal Delay (ms)" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Margin="0,10" Height="50" Width="250" VerticalAlignment="Top" Content="Heading Delay (ms)" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Margin="0,10" Height="50" Width="250" VerticalAlignment="Top" Content="Speedometer Delay (ms)" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Margin="0,10" Height="50" Width="300" VerticalAlignment="Top" Content="Controller Settings" FontWeight="Bold" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Margin="0,10" Height="50" Width="200" VerticalAlignment="Top" Content="DeviceID" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Margin="0,10" Height="50" Width="200" VerticalAlignment="Top" Content="BaudRate" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Margin="0,10" Height="50" Width="200" VerticalAlignment="Top" Content="" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+            <Grid>
+                <StackPanel Orientation="Vertical">
+                    <ListBox Margin="0,70,0,10" Height="50" Width="200" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <ListBox Margin="0,10" Height="50" Width="200" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <ListBox Margin="0,10" Height="50" Width="200" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <ListBox Margin="0,80" Height="50" Width="200" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <ListBox Margin="0,-50" Height="50" Width="200" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+            <Grid>
+                <StackPanel Orientation="Vertical">
+                    <Button Margin="20,70,20,10" Height="50" Width="150" Content="SET" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Button Margin="20,10" Height="50" Width="150" Content="SET" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Button Margin="20,10" Height="50" Width="150" Content="SET" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Button Margin="20,80" Height="50" Width="150" Content="SET" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Button Margin="20,-50" Height="50" Width="150" Content="SET" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>

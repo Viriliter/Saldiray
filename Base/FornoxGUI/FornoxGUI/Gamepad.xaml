@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:FornoxGUI"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib">
+
+    <System:Boolean x:Key="Key_X">false</System:Boolean>
+    <System:Boolean x:Key="Key_Y">false</System:Boolean>
+    <System:Boolean x:Key="Key_A">false</System:Boolean>
+    <System:Boolean x:Key="Key_B">false</System:Boolean>
+    <System:Boolean x:Key="Key_LB">false</System:Boolean>
+    <System:Boolean x:Key="Key_RB">false</System:Boolean>
+    <System:Boolean x:Key="Key_LT">false</System:Boolean>
+    <System:Boolean x:Key="Key_RT">false</System:Boolean>
+    <System:Int16   x:Key="Key_UpDown">0</System:Int16>
+    <System:Int16   x:Key="Key_LeftRight">0</System:Int16>
+    <System:Byte    x:Key="JoyL_X">0x7F</System:Byte>
+    <System:Byte    x:Key="JoyL_Y">0x7F</System:Byte>
+    <System:Byte    x:Key="JoyR_X">0x7F</System:Byte>
+    <System:Byte    x:Key="JoyR_Y">0x7F</System:Byte>
+    
+</ResourceDictionary>

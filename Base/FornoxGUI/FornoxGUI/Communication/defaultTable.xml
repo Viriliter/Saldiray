@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <Commands StartF="0x01" SystemID="">
+
+        <TransmissionCheck name="TransmissionCheck"  ComponentID="0x00">
+          <IsConnected name="IsConnected"  PayloadL="1" PacketSeq="" MessageID="0xFF" CRC="">0</IsConnected>
+          <IsDataAcknowledged name="IsDataAcknowledged"  PayloadL="1" PacketSeq="" MessageID="0x00" CRC="">0</IsDataAcknowledged>
+          <VehicleBaudrate name="VehicleBaudrate"  PayloadL="2" PacketSeq="" MessageID="0x01" CRC=""></VehicleBaudrate>
+        </TransmissionCheck>
+
+        <ArmVehicle name="ArmVehicle" ComponentID="0x01">
+            <IsUGVArmed name="IsUGVArmed" PayloadL="1" PacketSeq="" MessageID="0xFF" CRC="">0</IsUGVArmed>
+        </ArmVehicle>
+
+        <DriveCommand name="DriveCommand" ComponentID="0x02">
+            <Forward name="Forward" PayloadL="2" PacketSeq="" MessageID="0x01" CRC="">0</Forward>
+            <Backward name="Backward" PayloadL="2" PacketSeq="" MessageID="0x02" CRC="">0</Backward>
+            <Right name="Right" PayloadL="2" PacketSeq="" MessageID="0x03" CRC="">0</Right>
+            <Left name="Left" PayloadL="2" PacketSeq="" MessageID="0x04" CRC="">0</Left>
+            <Stop name="Stop" PayloadL="2" PacketSeq="" MessageID="0x00" CRC="">0</Stop>
+        </DriveCommand>
+
+        <DriveMode name="DriveMode" ComponentID="0x03">
+            <IsAutoPilotEnabled name="IsAutoPilotEnabled" PayloadL="1" PacketSeq="" MessageID="0xFF" CRC="">0</IsAutoPilotEnabled>
+        </DriveMode>
+
+        <ArmWeapon name="ArmWeapon" ComponentID="0x04">
+            <IsEnabled name="IsEnabled" PayloadL="1" PacketSeq="" MessageID="0xFF" CRC=""></IsEnabled>
+        </ArmWeapon>
+
+        <WeaponCommand name="WeaponCommand" ComponentID="0x05">
+            <WeapPitch name="WeaponPitch" PayloadL="2" PacketSeq="" MessageID="0x00" CRC=""></WeapPitch>
+            <WeapRoll name="WeaponRoll"  PayloadL="2" PacketSeq="" MessageID="0x01" CRC=""></WeapRoll>
+            <TargetDistance name="TargetDistance"  PayloadL="2" PacketSeq="" MessageID="0x02" CRC=""></TargetDistance>
+        </WeaponCommand>
+
+        <Navigation name="Navigation" ComponentID="0x06">
+            <AddWaypoint name="AddWaypoint" PayloadL="40" PacketSeq="" MessageID="0x00" CRC=""></AddWaypoint>
+            <DeleteWaypoint name="DeleteWaypoint" PayloadL="40" PacketSeq="" MessageID="0x01" CRC=""></DeleteWaypoint>
+            <WaypointRadius name="WaypointRadius"  PayloadL="2" PacketSeq="" MessageID="0x02" CRC=""></WaypointRadius>
+            <GPSStatus name="GPSStatus"  PayloadL="1" PacketSeq="" MessageID="0x03" CRC=""></GPSStatus>
+            <SatelliteCount name="SatelliteCount"  PayloadL="1" PacketSeq="" MessageID="0x04" CRC=""></SatelliteCount>
+        </Navigation>
+
+        <TelemetryInfo name="TelemetryInfo"  ComponentID="0x07">
+          <UGVLocation name="UGVLocation"  PayloadL="32" PacketSeq="" MessageID="0x01" CRC=""></UGVLocation>
+          <UGVSpeed name="UGVSpeed"  PayloadL="2" PacketSeq="" MessageID="0x02" CRC=""></UGVSpeed>
+          <UGVAttitude name="UGVAttitude"  PayloadL="23" PacketSeq="" MessageID="0x03" CRC=""></UGVAttitude>
+          <UGVAcceleration name="UGVAcceleration"  PayloadL="23" PacketSeq="" MessageID="0x04" CRC=""></UGVAcceleration>
+          <UGVCompass name="UGVCompass"  PayloadL="23" PacketSeq="" MessageID="0x05" CRC=""></UGVCompass>
+          <UGVHeading name="UGVHeading"  PayloadL="2" PacketSeq="" MessageID="0x06" CRC=""></UGVHeading>
+          <UGVAltitudeOffset name="UGVAltitudeOffset"  PayloadL="2" PacketSeq="" MessageID="0x07" CRC=""></UGVAltitudeOffset>
+        </TelemetryInfo>
+
+    </Commands>
+</data>  

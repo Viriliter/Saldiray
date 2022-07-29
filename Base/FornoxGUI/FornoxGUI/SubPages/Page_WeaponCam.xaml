@@ -1,0 +1,31 @@
+﻿<Page x:Class="FornoxGUI.SubPages.Page_WeaponCam"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:controls="clr-namespace:Ozeki.Media;assembly=OzekiSDK"
+      xmlns:local="clr-namespace:FornoxGUI.SubPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1366"
+      Title="Page_WeaponCam" DataContext="{Binding RelativeSource={RelativeSource Self}}">
+
+    <Grid Background="WhiteSmoke">
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Height="40" Width="250" Content="SURVEILLANCE CAM" Margin="50,50,0,0" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Foreground="White"/>
+                <Button Content="Compose" Width="100" Height="50"  Margin="50,50,0,0" Command="{Binding ComposeCommand}"/>
+                <TextBox Width="150" Height="50"  Margin="10,50,0,0" Text="{Binding CameraUrl, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Background="{x:Null}" BorderBrush="{x:Null}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="ConnectButton" Content="Connect" Margin="90,0,0,0" Height="50" Width="100" HorizontalAlignment="Left"  IsEnabled="False" Command="{Binding ConnectCommand}"/>
+                <Button Name="DisconnectButton" Content="Disconnect" Margin="10,0,0,0" Height="50" Width="100" HorizontalAlignment="Left" IsEnabled="False" Command="{Binding DisconnectCommand}"/>
+            </StackPanel>
+        </StackPanel>
+
+        <GroupBox  Header="Live camera" HorizontalAlignment="Left" VerticalAlignment="Top" Height="768" Width="1366" BorderBrush="{x:Null}">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <controls:VideoViewerWPF Name="videoViewer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Black"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Page>

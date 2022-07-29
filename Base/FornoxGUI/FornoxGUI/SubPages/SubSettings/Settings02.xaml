@@ -1,0 +1,39 @@
+﻿<Page x:Class="FornoxGUI.SubPages.SubSettings.Settings02"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FornoxGUI.SubPages.SubSettings"
+      mc:Ignorable="d" 
+      d:DesignHeight="678" d:DesignWidth="1000"
+      Title="Settings02">
+
+    <Grid Background="WhiteSmoke">
+        <StackPanel Orientation="Horizontal" Margin="5,20,5,5">
+            <Grid>
+                <StackPanel Orientation="Vertical">
+                    <Label Margin="0,10" Height="50" Width="300" VerticalAlignment="Top" Content="Map Settings" FontWeight="Bold" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Margin="0,10" Height="50" Width="200" VerticalAlignment="Top" Content="Path Record Location" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Margin="0,10" Height="50" Width="200" VerticalAlignment="Top" Content="Loiter Radius" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Margin="0,10" Height="50" Width="200" VerticalAlignment="Top" Content="Number of Loiting" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Margin="0,10" Height="50" Width="200" VerticalAlignment="Top" Content="Waypoint Radius" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+            <Grid>
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="BrowseLocation" Margin="0,80,0,10" Height="40" Width="300" Background="White" BorderBrush="#FFB2B2B2" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Browse_Click"/>
+                    <TextBox x:Name="Box1" Margin="-100,10,0,10" Height="50" Width="200" PreviewTextInput="NumberValidationTextBox" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <TextBox x:Name="Box2" Margin="-100,10,0,10" Height="50" Width="200" PreviewTextInput="NumberValidationTextBox" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                    <TextBox x:Name="Box3" Margin="-100,10,0,10" Height="50" Width="200" PreviewTextInput="NumberValidationTextBox" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+            <Grid>
+                <StackPanel Orientation="Vertical">
+                    <Button Margin="20,140,0,0" Height="50" Width="150" Content="SET" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_Click_1"/>
+                    <Button Margin="20,20" Height="50" Width="150" Content="SET" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_Click_2"/>
+                    <Button Margin="20,0" Height="50" Width="150" Content="SET" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_Click_3"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>

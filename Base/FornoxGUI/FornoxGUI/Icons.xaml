@@ -1,0 +1,140 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:FornoxGUI">
+    <Path x:Key="HomeIcon" x:Shared="False" Data="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" Fill="White"/>
+    <Path x:Key="MapMarkerRadiusIcon" x:Shared="False" Data="M12,2C15.31,2 18,4.66 18,7.95C18,12.41 12,19 12,19C12,19 6,12.41 6,7.95C6,4.66 8.69,2 12,2M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M20,19C20,21.21 16.42,23 12,23C7.58,23 4,21.21 4,19C4,17.71 5.22,16.56 7.11,15.83L7.75,16.74C6.67,17.19 6,17.81 6,18.5C6,19.88 8.69,21 12,21C15.31,21 18,19.88 18,18.5C18,17.81 17.33,17.19 16.25,16.74L16.89,15.83C18.78,16.56 20,17.71 20,19Z"  Fill="White"/>
+    <Path x:Key="AndroidStudioIcon" x:Shared="False" Data="M11,2H13V4H13.5A1.5,1.5 0 0,1 15,5.5V9L14.56,9.44L16.2,12.28C17.31,11.19 18,9.68 18,8H20C20,10.42 18.93,12.59 17.23,14.06L20.37,19.5L20.5,21.72L18.63,20.5L15.56,15.17C14.5,15.7 13.28,16 12,16C10.72,16 9.5,15.7 8.44,15.17L5.37,20.5L3.5,21.72L3.63,19.5L9.44,9.44L9,9V5.5A1.5,1.5 0 0,1 10.5,4H11V2M9.44,13.43C10.22,13.8 11.09,14 12,14C12.91,14 13.78,13.8 14.56,13.43L13.1,10.9H13.09C12.47,11.5 11.53,11.5 10.91,10.9H10.9L9.44,13.43M12,6A1,1 0 0,0 11,7A1,1 0 0,0 12,8A1,1 0 0,0 13,7A1,1 0 0,0 12,6Z" Fill="White"/>
+    <Path x:Key="AirplaneIcon" x:Shared="False" Data="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z"  Fill="White"/>
+    <Path x:Key="SettingsIcon" x:Shared="False" Data="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"  Fill="White"/>
+
+    <Path x:Key="CloseIcon" x:Shared="False" Data="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"  Fill="White"/>
+    <Path x:Key="CloseBoxIcon" x:Shared="False" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path2" Fill="White" StrokeThickness="1.38888884">
+        <Path.Data>
+            <PathGeometry Figures="m 15.722222 -3.2000002e-7 h -3.75 H 0.0277775 -3.7222222 A 2.7777778 2.7777778 0 0 0 -6.5 2.7777772 V 6.5277767 18.611111 22.222222 A 2.7777778 2.7777778 0 0 0 -3.7222222 25 H 0.0277775 12.111111 15.722222 A 2.7777778 2.7777778 0 0 0 18.5 22.222222 v -3.75 V 6.5277767 2.7777772 A 2.7777778 2.7777778 0 0 0 15.722222 -3.2000002e-7 M 11 19.444444 l -5 -5 -5.00000004 5 L -0.9444444 17.5 4.055556 12.5 -0.9444444 7.4999997 0.99999996 5.5555557 6 10.555556 l 5 -5.0000003 1.944444 1.944444 -5 5.0000003 5 5 z" FillRule="NonZero"/>
+        </Path.Data>
+    </Path>
+
+
+    <Path x:Key="WifiIcon" x:Shared="False" Data="M12,21L15.6,16.2C14.6,15.45 13.35,15 12,15C10.65,15 9.4,15.45 8.4,16.2L12,21M12,3C7.95,3 4.21,4.34 1.2,6.6L3,9C5.5,7.12 8.62,6 12,6C15.38,6 18.5,7.12 21,9L22.8,6.6C19.79,4.34 16.05,3 12,3M12,9C9.3,9 6.81,9.89 4.8,11.4L6.6,13.8C8.1,12.67 9.97,12 12,12C14.03,12 15.9,12.67 17.4,13.8L19.2,11.4C17.19,9.89 14.7,9 12,9Z" Fill="White"/>
+    <Path x:Key="BufferIcon" x:Shared="False" Data="M12.6,2.86C15.27,4.1 18,5.39 20.66,6.63C20.81,6.7 21,6.75 21,6.95C21,7.15 20.81,7.19 20.66,7.26C18,8.5 15.3,9.77 12.62,11C12.21,11.21 11.79,11.21 11.38,11C8.69,9.76 6,8.5 3.32,7.25C3.18,7.19 3,7.14 3,6.94C3,6.76 3.18,6.71 3.31,6.65C6,5.39 8.74,4.1 11.44,2.85C11.73,2.72 12.3,2.73 12.6,2.86M12,21.15C11.8,21.15 11.66,21.07 11.38,20.97C8.69,19.73 6,18.47 3.33,17.22C3.19,17.15 3,17.11 3,16.9C3,16.7 3.19,16.66 3.34,16.59C3.78,16.38 4.23,16.17 4.67,15.96C5.12,15.76 5.56,15.76 6,15.97C7.79,16.8 9.57,17.63 11.35,18.46C11.79,18.67 12.23,18.66 12.67,18.46C14.45,17.62 16.23,16.79 18,15.96C18.44,15.76 18.87,15.75 19.29,15.95C19.77,16.16 20.24,16.39 20.71,16.61C20.78,16.64 20.85,16.68 20.91,16.73C21.04,16.83 21.04,17 20.91,17.08C20.83,17.14 20.74,17.19 20.65,17.23C18,18.5 15.33,19.72 12.66,20.95C12.46,21.05 12.19,21.15 12,21.15M12,16.17C11.9,16.17 11.55,16.07 11.36,16C8.68,14.74 6,13.5 3.34,12.24C3.2,12.18 3,12.13 3,11.93C3,11.72 3.2,11.68 3.35,11.61C3.8,11.39 4.25,11.18 4.7,10.97C5.13,10.78 5.56,10.78 6,11C7.78,11.82 9.58,12.66 11.38,13.5C11.79,13.69 12.21,13.69 12.63,13.5C14.43,12.65 16.23,11.81 18.04,10.97C18.45,10.78 18.87,10.78 19.29,10.97C19.76,11.19 20.24,11.41 20.71,11.63C20.77,11.66 20.84,11.69 20.9,11.74C21.04,11.85 21.04,12 20.89,12.12C20.84,12.16 20.77,12.19 20.71,12.22C18,13.5 15.31,14.75 12.61,16C12.42,16.09 12.08,16.17 12,16.17Z" Fill="White"/>
+    <Path x:Key="MapIcon" x:Shared="False" Data="M15,19L9,16.89V5L15,7.11M20.5,3C20.44,3 20.39,3 20.34,3L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.61,21 3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z"  Fill="White"/>
+    <Path x:Key="VectorPolylineIcon" x:Shared="False" Data="M16,2V8H17.08L14.95,13H14.26L12,9.97V5H6V11H6.91L4.88,16H2V22H8V16H7.04L9.07,11H10.27L12,13.32V19H18V13H17.12L19.25,8H22V2M18,4H20V6H18M8,7H10V9H8M14,15H16V17H14M4,18H6V20H4"  Fill="White"/>
+    <Path x:Key="CloudUploadIcon" x:Shared="False" Data="M14,13V17H10V13H7L12,8L17,13M19.35,10.03C18.67,6.59 15.64,4 12,4C9.11,4 6.6,5.64 5.35,8.03C2.34,8.36 0,10.9 0,14A6,6 0 0,0 6,20H19A5,5 0 0,0 24,15C24,12.36 21.95,10.22 19.35,10.03Z" Fill="White"/>
+    <Path x:Key="DatabaseSearchIcon" x:Shared="False" Data="M10,1C5.58,1 2,2.79 2,5C2,7.06 5.13,8.74 9.15,8.96C10.45,7.7 12.19,7 14,7C14.8,7 15.59,7.14 16.34,7.41C17.37,6.74 18,5.91 18,5C18,2.79 14.42,1 10,1M2,7V10C2,11.68 4.08,13.11 7,13.71C7.06,12.7 7.32,11.72 7.77,10.82C4.44,10.34 2,8.82 2,7M13.93,8.94C12.75,8.95 11.53,9.4 10.46,10.46C6.21,14.71 11.71,21.5 16.75,18.17L21.29,22.71L22.71,21.29L18.17,16.75C20.66,12.97 17.47,8.93 13.93,8.94M13.9,11C15.47,10.95 17,12.16 17,14A3,3 0 0,1 14,17C11.33,17 10,13.77 11.88,11.88C12.47,11.29 13.19,11 13.9,11M2,12V15C2,17.05 5.09,18.72 9.06,18.95C8.17,18.07 7.54,16.95 7.22,15.74C4.18,15.17 2,13.72 2,12Z" Fill="White"/>
+    <Path x:Key="LaptopIcon" x:Shared="False" Data="M4,6H20V16H4M20,18A2,2 0 0,0 22,16V6C22,4.89 21.1,4 20,4H4C2.89,4 2,4.89 2,6V16A2,2 0 0,0 4,18H0V20H24V18H20Z"  Fill="White"/>
+    <Path x:Key="UAVIcon" x:Shared="False" Data="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" Fill="White"/>
+    <Path x:Key="AirplaneIcon_Orange" x:Shared="False" Data="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z" Stroke="Black" Fill="Orange"/>
+    <Path x:Key="SteeringWheel" x:Shared="False" Data="M13,19.92C14.8,19.7 16.35,18.95 17.65,17.65C18.95,16.35 19.7,14.8 19.92,13H16.92C16.7,14 16.24,14.84 15.54,15.54C14.84,16.24 14,16.7 13,16.92V19.92M10,8H14L17,11H19.92C19.67,9.05 18.79,7.38 17.27,6C15.76,4.66 14,4 12,4C10,4 8.24,4.66 6.73,6C5.21,7.38 4.33,9.05 4.08,11H7L10,8M11,19.92V16.92C10,16.7 9.16,16.24 8.46,15.54C7.76,14.84 7.3,14 7.08,13H4.08C4.3,14.77 5.05,16.3 6.35,17.6C7.65,18.9 9.2,19.67 11,19.92M12,2C14.75,2 17.1,3 19.05,4.95C21,6.9 22,9.25 22,12C22,14.75 21,17.1 19.05,19.05C17.1,21 14.75,22 12,22C9.25,22 6.9,21 4.95,19.05C3,17.1 2,14.75 2,12C2,9.25 3,6.9 4.95,4.95C6.9,3 9.25,2 12,2Z" Fill="White"/>
+    <Path x:Key="Controller" x:Shared="False" Data="M7.97,16L5,19C4.67,19.3 4.23,19.5 3.75,19.5A1.75,1.75 0 0,1 2,17.75V17.5L3,10.12C3.21,7.81 5.14,6 7.5,6H16.5C18.86,6 20.79,7.81 21,10.12L22,17.5V17.75A1.75,1.75 0 0,1 20.25,19.5C19.77,19.5 19.33,19.3 19,19L16.03,16H7.97M7,8V10H5V11H7V13H8V11H10V10H8V8H7M16.5,8A0.75,0.75 0 0,0 15.75,8.75A0.75,0.75 0 0,0 16.5,9.5A0.75,0.75 0 0,0 17.25,8.75A0.75,0.75 0 0,0 16.5,8M14.75,9.75A0.75,0.75 0 0,0 14,10.5A0.75,0.75 0 0,0 14.75,11.25A0.75,0.75 0 0,0 15.5,10.5A0.75,0.75 0 0,0 14.75,9.75M18.25,9.75A0.75,0.75 0 0,0 17.5,10.5A0.75,0.75 0 0,0 18.25,11.25A0.75,0.75 0 0,0 19,10.5A0.75,0.75 0 0,0 18.25,9.75M16.5,11.5A0.75,0.75 0 0,0 15.75,12.25A0.75,0.75 0 0,0 16.5,13A0.75,0.75 0 0,0 17.25,12.25A0.75,0.75 0 0,0 16.5,11.5Z" Fill="White"/>
+    <Path x:Key="PriorityLowIcon" x:Shared="False" Data="M14,5H22V7H14V5M14,10.5H22V12.5H14V10.5M14,16H22V18H14V16M2,11.5C2,15.08 4.92,18 8.5,18H9V20L12,17L9,14V16H8.5C6,16 4,14 4,11.5C4,9 6,7 8.5,7H12V5H8.5C4.92,5 2,7.92 2,11.5Z" Fill="White"/>
+    <Path x:Key="PriorityHighIcon" x:Shared="False" Data="M14,19H22V17H14V19M14,13.5H22V11.5H14V13.5M14,8H22V6H14V8M2,12.5C2,8.92 4.92,6 8.5,6H9V4L12,7L9,10V8H8.5C6,8 4,10 4,12.5C4,15 6,17 8.5,17H12V19H8.5C4.92,19 2,16.08 2,12.5Z" Fill="White"/>
+    <Path x:Key="EyeOffIcon" x:Shared="False" Data="M11.83,9L15,12.16C15,12.11 15,12.05 15,12A3,3 0 0,0 12,9C11.94,9 11.89,9 11.83,9M7.53,9.8L9.08,11.35C9.03,11.56 9,11.77 9,12A3,3 0 0,0 12,15C12.22,15 12.44,14.97 12.65,14.92L14.2,16.47C13.53,16.8 12.79,17 12,17A5,5 0 0,1 7,12C7,11.21 7.2,10.47 7.53,9.8M2,4.27L4.28,6.55L4.73,7C3.08,8.3 1.78,10 1,12C2.73,16.39 7,19.5 12,19.5C13.55,19.5 15.03,19.2 16.38,18.66L16.81,19.08L19.73,22L21,20.73L3.27,3M12,7A5,5 0 0,1 17,12C17,12.64 16.87,13.26 16.64,13.82L19.57,16.75C21.07,15.5 22.27,13.86 23,12C21.27,7.61 17,4.5 12,4.5C10.6,4.5 9.26,4.75 8,5.2L10.17,7.35C10.74,7.13 11.35,7 12,7Z" Fill="White"/>
+    <Path x:Key="EyeIcon" x:Shared="False" Data="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" Fill="White"/>
+    <Path x:Key="ImageIcon" x:Shared="False" Data="M8.5,13.5L11,16.5L14.5,12L19,18H5M21,19V5C21,3.89 20.1,3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19Z" Fill="White"/>
+    <Path x:Key="PanoramaIcon" x:Shared="False" Data="M21.43,4C21.33,4 21.23,4 21.12,4.06C18.18,5.16 15.09,5.7 12,5.7C8.91,5.7 5.82,5.15 2.88,4.06C2.77,4 2.66,4 2.57,4C2.23,4 2,4.23 2,4.63V19.38C2,19.77 2.23,20 2.57,20C2.67,20 2.77,20 2.88,19.94C5.82,18.84 8.91,18.3 12,18.3C15.09,18.3 18.18,18.85 21.12,19.94C21.23,20 21.33,20 21.43,20C21.76,20 22,19.77 22,19.37V4.63C22,4.23 21.76,4 21.43,4M20,6.54V17.45C17.4,16.68 14.72,16.29 12,16.29C9.28,16.29 6.6,16.68 4,17.45V6.54C6.6,7.31 9.28,7.7 12,7.7C14.72,7.71 17.4,7.32 20,6.54Z" Fill="White"/>
+    <Path x:Key="BriefcaseOutlineIcon" x:Shared="False" Data="M20,6C20.58,6 21.05,6.2 21.42,6.59C21.8,7 22,7.45 22,8V19C22,19.55 21.8,20 21.42,20.41C21.05,20.8 20.58,21 20,21H4C3.42,21 2.95,20.8 2.58,20.41C2.2,20 2,19.55 2,19V8C2,7.45 2.2,7 2.58,6.59C2.95,6.2 3.42,6 4,6H8V4C8,3.42 8.2,2.95 8.58,2.58C8.95,2.2 9.42,2 10,2H14C14.58,2 15.05,2.2 15.42,2.58C15.8,2.95 16,3.42 16,4V6H20M4,8V19H20V8H4M14,6V4H10V6H14Z" Fill="White"/>
+    <Path x:Key="UGVIcon" x:Shared="False" Data="M 13.711539 9.6125791 2.6125182 8.3419966 2.6346153 7.2740384 4.7115384 3.8125 h 3.4615385 l 5.5384621 3.4615384 v 0 2.3385407 m 1.373565 1.6201819 c 0 1.147052 -0.918821 1.579738 -2.065873 1.579739 H 3.3269231 C 2.1798702 12.8125 1.2500001 11.88263 1.25 10.735577 1.25 9.588524 2.1872635 8.5286285 3.3269231 8.6586539 l 9.7235579 1.109375 c 1.13966 0.1300254 2.045672 0.4723601 2.034623 1.4647321 M 4.0192308 10.735577 c 2e-7 -0.382351 -0.3099566 -0.692308 -0.6923077 -0.692308 -0.3823511 0 -0.692308 0.309957 -0.6923078 0.692308 -2e-7 0.382351 0.3099567 0.692308 0.6923078 0.692308 0.3823511 0 0.6923079 -0.309957 0.6923077 -0.692308 m 9.6610582 0.71875 c 0 -0.382351 -0.309957 -0.692308 -0.692308 -0.692308 -0.382351 0 -0.692308 0.309957 -0.692308 0.692308 0 0.382351 0.309957 0.692308 0.692308 0.692308 0.382351 0 0.692308 -0.309957 0.692308 -0.692308 z" Fill="White"/>
+    <Path x:Key="Target" x:Shared="False" Data="M11,2V4.07C7.38,4.53 4.53,7.38 4.07,11H2V13H4.07C4.53,16.62 7.38,19.47 11,19.93V22H13V19.93C16.62,19.47 19.47,16.62 19.93,13H22V11H19.93C19.47,7.38 16.62,4.53 13,4.07V2M11,6.08V8H13V6.09C15.5,6.5 17.5,8.5 17.92,11H16V13H17.91C17.5,15.5 15.5,17.5 13,17.92V16H11V17.91C8.5,17.5 6.5,15.5 6.08,13H8V11H6.09C6.5,8.5 8.5,6.5 11,6.08M12,11A1,1 0 0,0 11,12A1,1 0 0,0 12,13A1,1 0 0,0 13,12A1,1 0 0,0 12,11Z" Fill="White"/>
+    <Path x:Key="BinocularsIcon" x:Shared="False"  Data="M11,6H13V13H11V6M9,20A1,1 0 0,1 8,21H5A1,1 0 0,1 4,20V15L6,6H10V13A1,1 0 0,1 9,14V20M10,5H7V3H10V5M15,20V14A1,1 0 0,1 14,13V6H18L20,15V20A1,1 0 0,1 19,21H16A1,1 0 0,1 15,20M14,5V3H17V5H14Z" Fill="White"/>
+    <Viewbox x:Key="EmergencyStop"  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+        <Canvas Name="SVGRoot" Width="200" Height="50">
+            <Canvas.RenderTransform>
+                <TranslateTransform X="0" Y="0"/>
+            </Canvas.RenderTransform>
+            <Canvas.Resources/>
+            <!--Unknown tag: sodipodi:namedview-->
+            <!--Unknown tag: metadata-->
+            <Canvas Name="layer1">
+                <Canvas Name="g3339">
+                    <Canvas Name="g3378">
+                        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="40" Canvas.Top="0" Width="120" Height="50" Name="rect3260" Fill="#FFED1F24"/>
+                        <Canvas Name="g3280">
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="0,10 10,0 0,0 " Name="polygon3262" FillRule="NonZero" Fill="#FFF6EC13"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="10,0 0,10 0,20 20,0 " Name="polygon3264" FillRule="NonZero" Fill="#000000"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="20,0 0,20 0,30 30,0 " Name="polygon3266" FillRule="NonZero" Fill="#FFF6EC13"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="0,30 0,40 40,0 30,0 " Name="polygon3268" FillRule="NonZero" Fill="#000000"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="0,50 40,10 40,0 0,40 " Name="polygon3270" FillRule="NonZero" Fill="#FFF6EC13"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="10,50 40,20 40,10 0,50 " Name="polygon3272" FillRule="NonZero" Fill="#000000"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="20,50 40,30 40,20 10,50 " Name="polygon3274" FillRule="NonZero" Fill="#FFF6EC13"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="30,50 40,40 40,30 20,50 " Name="polygon3276" FillRule="NonZero" Fill="#000000"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="40,40 30,50 40,50 " Name="polygon3278" FillRule="NonZero" Fill="#FFF6EC13"/>
+                        </Canvas>
+                        <Canvas Name="g3300">
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="200,10 190,0 200,0 " Name="polygon3282" FillRule="NonZero" Fill="#FFF6EC13"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="190,0 200,10 200,20 180,0 " Name="polygon3284" FillRule="NonZero" Fill="#000000"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="180,0 200,20 200,30 170,0 " Name="polygon3286" FillRule="NonZero" Fill="#FFF6EC13"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="200,30 200,40 160,0 170,0 " Name="polygon3288" FillRule="NonZero" Fill="#000000"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="200,50 160,10 160,0 200,40 " Name="polygon3290" FillRule="NonZero" Fill="#FFF6EC13"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="190,50 160,20 160,10 200,50 " Name="polygon3292" FillRule="NonZero" Fill="#000000"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="180,50 160,30 160,20 190,50 " Name="polygon3294" FillRule="NonZero" Fill="#FFF6EC13"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="170,50 160,40 160,30 180,50 " Name="polygon3296" FillRule="NonZero" Fill="#000000"/>
+                            <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="160,40 170,50 160,50 " Name="polygon3298" FillRule="NonZero" Fill="#FFF6EC13"/>
+                        </Canvas>
+                        <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="12" Canvas.Left="50" Canvas.Top="5" Name="text3306">
+            <Span Foreground="#FFFFFFFF" FontSize="18" FontFamily="MyriadPro-Bold">EMERGENCY</Span>
+                        </TextBlock>
+                        <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="12" Canvas.Left="80" Canvas.Top="25" Name="text3349">
+            <Span Foreground="#FFFFFFFF" FontSize="18" FontFamily="MyriadPro-Bold">STOP</Span>
+                        </TextBlock>
+                    </Canvas>
+                    <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="40" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="160" Canvas.Top="-10" Name="text3343"/>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Viewbox>
+    <Viewbox x:Key="StartEngine" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+        <Canvas Name="SVGRoot432" Width="200" Height="50">
+            <Canvas.RenderTransform>
+                <TranslateTransform X="0" Y="0"/>
+            </Canvas.RenderTransform>
+            <Canvas.Resources/>
+            <!--Unknown tag: sodipodi:namedview-->
+            <!--Unknown tag: metadata-->
+            <Canvas Name="layer4321">
+                <Canvas Name="g8243233">
+                    <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="0" Canvas.Top="0" Width="200" Height="50" Name="path8213" Fill="#FF696969">
+                        <Rectangle.BitmapEffect>
+                            <OuterGlowBitmapEffect GlowSize="150" />
+                        </Rectangle.BitmapEffect>
+                    </Rectangle>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="EngineColor" Canvas.Left="-3" Fill="#FFF9ED32" Stroke="#FFFFFFFF" StrokeMiterLimit="10">
+                        <Path.Data>
+                            <PathGeometry Figures="m 115 12.001 c 0 0.552 -0.447 1 -1 1 H 86 c -0.553 0 -1 -0.448 -1 -1 V 6 c 0 -0.552 0.447 -1 1 -1 h 28 c 0.553 0 1 0.448 1 1 z" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                    <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="11" FontFamily="MyriadPro-Cond" Foreground="#FFFFFFFF" Canvas.Left="81.996094" Canvas.Top="14.3" Name="EngineText">START</TextBlock>
+                    <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="12" FontFamily="MyriadPro-Semibold" Foreground="#FFFFFFFF" Canvas.Left="75.99707" Canvas.Top="29.7" Name="text8217">ENGINE</TextBlock>
+                    <Line xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" X1="65" Y1="29" X2="135" Y2="29" Name="line8219" Stroke="#FFFFFFFF" StrokeMiterLimit="10"/>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Viewbox>
+    <Viewbox x:Key="SupremeLogo" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+        <Canvas Name="SVGRoot1561" Width="240" Height="320">
+            <Canvas.RenderTransform>
+                <TranslateTransform X="0" Y="0"/>
+            </Canvas.RenderTransform>
+            <Canvas.Resources/>
+            <!--Unknown tag: sodipodi:namedview-->
+            <!--Unknown tag: metadata-->
+            <Canvas Name="layer1891">
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path1511" Fill="#FF565759" StrokeThickness="0.13279131" Stroke="#FF000000" StrokeMiterLimit="27.70000076" StrokeLineJoin="Round">
+                    <Path.Data>
+                        <PathGeometry Figures="M 21.546731 101.0084 7.6255657 94.88805 7.4544957 56.319824 c -0.09409 -21.212524 0.03939 -38.568227 0.296619 -38.568227 0.257229 0 25.5626763 10.875782 56.2343263 24.168405 l 55.766639 24.168405 56.30043 -24.344535 56.30043 -24.344535 0.17111 38.398705 c 0.0941 21.119287 0.0559 38.513918 -0.0849 38.654728 -0.28201 0.28201 -28.97902 12.79203 -29.34392 12.79203 -0.12486 0 -0.30494 -12.04775 -0.40018 -26.772777 L 202.52188 53.699247 161.25609 71.577041 119.9903 89.454837 79.05492 71.758924 C 56.540466 62.026173 37.746658 53.915416 37.290905 53.735021 c -0.654693 -0.25914 -0.828641 5.322799 -0.828641 26.590893 0 14.805386 -0.223733 26.892776 -0.497184 26.860856 -0.273451 -0.0319 -6.761709 -2.81218 -14.418349 -6.17837 z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path1513" Fill="#FF565759" StrokeThickness="0.13279131" Stroke="#FF000000" StrokeMiterLimit="27.70000076" StrokeLineJoin="Round">
+                    <Path.Data>
+                        <PathGeometry Figures="m 63.233457 281.42035 -55.8321461 -24.00567 -0.01824 -78.02842 -0.01824 -78.02842 4.8061161 2.04395 c 2.643364 1.12418 9.131621 3.91717 14.418349 6.20665 l 9.612233 4.16269 0.169107 61.92265 0.169107 61.92265 2.151087 1.01435 c 1.183098 0.55789 19.907954 8.67484 41.610788 18.03765 l 39.459712 17.02332 41.41563 -17.87245 41.41564 -17.87244 0.33145 -62.06485 0.33146 -62.06486 14.44649 -6.25919 c 7.94556 -3.44256 14.5842 -6.2592 14.75253 -6.2592 0.16833 0 0.23024 35.07871 0.13759 77.95269 l -0.16846 77.95268 -55.3532 23.80984 c -30.44426 13.09541 -55.94982 23.94534 -56.67903 24.11095 -0.79364 0.18024 -23.736811 -9.33475 -57.157971 -23.70457 z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path1515" Fill="#FFE9C131" StrokeThickness="1.03199995" Stroke="#FF000000" StrokeMiterLimit="27.70000076" StrokeLineJoin="Bevel">
+                    <Path.Data>
+                        <PathGeometry Figures="m 81.114407 249.04862 -38.448931 -16.68264 -0.177265 -16.3243 -0.177264 -16.32431 5.149109 2.21832 c 2.83201 1.22008 20.064643 8.68852 38.29474 16.59653 23.862094 10.35112 33.609814 14.28225 34.802914 14.03557 0.9115 -0.18846 13.58971 -5.41594 28.17379 -11.61663 l 26.5165 -11.27396 0.17652 -18.00199 c 0.14039 -14.31684 0.005 -17.93221 -0.66291 -17.66121 -0.46169 0.18743 -13.02962 5.61791 -27.92873 12.06776 l -27.0893 11.72699 -38.70478 -16.76001 -38.70478 -16.76 v -49.92298 c 0 -27.457635 0.164271 -49.922973 0.365046 -49.922973 0.200775 0 15.340041 6.451643 33.642814 14.336986 18.302773 7.885342 35.54589 15.313053 38.31804 16.506025 l 5.04027 2.169039 38.71196 -16.681988 38.71197 -16.681988 0.17774 15.852885 c 0.0977 8.719087 0.054 15.976656 -0.0973 16.127932 -0.49462 0.494607 -76.85524 33.336542 -77.51064 33.336542 -0.3509 0 -12.76435 -5.22043 -27.585442 -11.60097 -14.821089 -6.38053 -27.161387 -11.60097 -27.422883 -11.60097 -0.261497 0 -0.468958 7.97981 -0.461025 17.73291 l 0.01443 17.73292 27.625719 11.93242 c 15.194141 6.56284 27.940431 11.8374 28.325091 11.72125 0.38465 -0.11615 17.55392 -7.52659 38.15393 -16.46765 20.60001 -8.94105 38.57323 -16.90746 39.02898 -17.09546 0.65861 -0.27168 0.0829 -0.023 0.0829 50.16978 v 50.01441 l -1.82301 0.84176 c -2.28024 1.05287 -71.36656 31.01405 -74.08048 32.12703 -1.88484 0.77298 -3.9974 -0.0559 -40.437668 -15.86703 z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+        </Canvas>
+    </Viewbox>
+    
+</ResourceDictionary>

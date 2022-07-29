@@ -1,0 +1,177 @@
+﻿<Page x:Class="FornoxGUI.MainPages.Page_SimulationTest"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FornoxGUI.MainPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1366"
+      Title="Page_SimulationTest" >
+    <Page.Resources>
+        <!--Expander Style-->
+        <Style x:Key="ExpanderStyle2" TargetType="{x:Type Expander}">
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Opacity" Value="0.7"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Expander}">
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" CornerRadius="3" SnapsToDevicePixels="true">
+                            <DockPanel>
+                                <ToggleButton x:Name="HeaderSite" ContentTemplate="{TemplateBinding HeaderTemplate}" ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}" Content="{TemplateBinding Header}" DockPanel.Dock="Top" Foreground="{TemplateBinding Foreground}"
+                                              FontWeight="{TemplateBinding FontWeight}" FocusVisualStyle="{StaticResource ExpanderHeaderFocusVisual}" FontStyle="{TemplateBinding FontStyle}" FontStretch="{TemplateBinding FontStretch}" FontSize="{TemplateBinding FontSize}" 
+                                              FontFamily="{TemplateBinding FontFamily}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" IsChecked="{Binding IsExpanded, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" MinWidth="0" 
+                                              MinHeight="0" Padding="{TemplateBinding Padding}" Style="{DynamicResource ToggleButtonStyle1}"  VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                <ContentPresenter x:Name="ExpandSite" DockPanel.Dock="Bottom" Focusable="false" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" Visibility="Collapsed" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </DockPanel>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsExpanded" Value="true">
+                                <Setter Property="Visibility" TargetName="ExpandSite" Value="Visible"/>
+                                <Setter Property="Opacity" Value="1"/>
+                            </Trigger>
+                            <Trigger Property="IsExpanded" Value="false">
+                                <Setter Property="Visibility" TargetName="ExpandSite" Value="Collapsed"/>
+                            </Trigger>
+                            <Trigger Property="ExpandDirection" Value="Right">
+                                <Setter Property="DockPanel.Dock" TargetName="ExpandSite" Value="Right"/>
+                                <Setter Property="DockPanel.Dock" TargetName="HeaderSite" Value="Left"/>
+                                <Setter Property="Style" TargetName="HeaderSite" Value="{StaticResource ExpanderRightHeaderStyle1}"/>
+                            </Trigger>
+                            <Trigger Property="ExpandDirection" Value="Left">
+                                <Setter Property="DockPanel.Dock" TargetName="ExpandSite" Value="Left"/>
+                                <Setter Property="DockPanel.Dock" TargetName="HeaderSite" Value="Right"/>
+                                <Setter Property="Style" TargetName="HeaderSite" Value="{StaticResource ExpanderLeftHeaderStyle1}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ToggleButtonStyle1" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border Padding="{TemplateBinding Padding}">
+                            <Grid Background="Transparent" SnapsToDevicePixels="False">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="500"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid>
+                                    <Grid.LayoutTransform>
+                                        <TransformGroup>
+                                            <TransformGroup.Children>
+                                                <TransformCollection>
+                                                    <RotateTransform Angle="90"/>
+                                                </TransformCollection>
+                                            </TransformGroup.Children>
+                                        </TransformGroup>
+                                    </Grid.LayoutTransform>
+                                    <Rectangle Opacity="70" x:Name="circle" Margin="0,-262,0,0" HorizontalAlignment="Center" Height="50" Stroke="{StaticResource Expander.Static.Circle.Stroke}" VerticalAlignment="Center" Width="500">
+                                        <Rectangle.Fill>
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="#FF131313" Offset="0"/>
+                                                <GradientStop Color="White" Offset="1"/>
+                                                <GradientStop Color="#FF5B5B5B" Offset="0.99"/>
+                                            </LinearGradientBrush>
+                                        </Rectangle.Fill>
+                                    </Rectangle>
+                                    <Path x:Name="arrow" Opacity="70" Margin="0,-262,0,0" Data="M 1,1.5 L 4.5,5 L 8,1.5" HorizontalAlignment="Center" SnapsToDevicePixels="false" StrokeThickness="2" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                                        <Path.Stroke>
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="#FF767676"/>
+                                                <GradientStop Color="White" Offset="1"/>
+                                                <GradientStop Color="#FFE9E9E9" Offset="0.98"/>
+                                                <GradientStop Color="WhiteSmoke" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </Path.Stroke>
+                                        <Path.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform ScaleX="5" ScaleY="5"/>
+                                                <SkewTransform/>
+                                                <RotateTransform/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </Path.RenderTransform>
+                                    </Path>
+                                </Grid>
+                                <ContentPresenter HorizontalAlignment="Center" Margin="0,4,0,0" Grid.Row="1" RecognizesAccessKey="True" SnapsToDevicePixels="True" VerticalAlignment="Top"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="true">
+                                <Setter Property="Data" TargetName="arrow" Value="M 1,4.5  L 4.5,1  L 8,4.5"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Stroke" TargetName="circle" Value="{StaticResource Expander.MouseOver.Circle.Stroke}"/>
+                                <Setter Property="Opacity" TargetName="circle" Value="100"/>
+                                <Setter Property="Stroke" TargetName="arrow" Value="CornflowerBlue"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Stroke" TargetName="circle" Value="{StaticResource Expander.Pressed.Circle.Stroke}"/>
+                                <Setter Property="Opacity" TargetName="circle" Value="100"/>
+                                <Setter Property="StrokeThickness" TargetName="circle" Value="1.5"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Stroke" TargetName="circle" Value="{StaticResource Expander.Disabled.Circle.Stroke}"/>
+                                <Setter Property="Opacity" TargetName="circle" Value="100"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid Background="Gray">
+        <Frame x:Name="SurveillanceView" NavigationUIVisibility="Hidden" />
+
+        <Expander x:Name="Expander_Video" Margin="0,65" HorizontalAlignment="Right" Width="350" Height="500" Grid.Column="1" ExpandDirection="Left" Style="{DynamicResource ExpanderStyle2}" IsExpanded="False"  >
+            <Grid>
+                <Grid Height="700" VerticalAlignment="Top" Background="WhiteSmoke" Opacity="0.7" Margin="0,0,0,-4"/>
+                <TabControl Background="{x:Null}" >
+                    <TabItem Height="30" Width="100" Header="Video Settings">
+                        <StackPanel Orientation="Vertical">
+
+                        </StackPanel>
+                    </TabItem>
+                    <TabItem Height="30" Width="100" Header="Camera Control">
+                        <Grid>
+                            <Slider Margin="10,190,0,0" Width="180" Height="20" VerticalAlignment="Top" Value="90" Maximum="180"/>
+                            <Slider Margin="0,100,-50,0" Width="180" Height="20" HorizontalAlignment="Right" VerticalAlignment="Top" Value="90"  Maximum="180" RenderTransformOrigin="0.5,0.5" >
+                                <Slider.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Slider.RenderTransform>
+                            </Slider>
+                            <Separator Width="250" Height="10" Margin="0,0,0,0" Background="WhiteSmoke"/>
+                            <StackPanel Margin="0,80,0,0" HorizontalAlignment="Center" Orientation="Horizontal">
+                                <Button  Name="Btn_StabilizeCamera" Width="110" Height="60" Foreground="#FF333333" Content="Activate Camera &#xa;      Stabilizer" IsEnabled="True"/>
+                                <Button Margin="5" Name="Btn_DestabilizeCamera" Width="110" Height="60" Foreground="#FF333333" Content="Deactivate Camera &#xa;        Stabilizer">
+                                    <Button.Triggers>
+
+                                    </Button.Triggers>
+                                </Button>
+
+                            </StackPanel>
+
+                        </Grid>
+                    </TabItem>
+
+                </TabControl>
+            </Grid>
+        </Expander>
+
+    </Grid>
+</Page>
